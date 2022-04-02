@@ -1,6 +1,6 @@
 .odd-number-element { /* for odd number elements */
     background-color:rgb(255,182,193); /* light/red pink */
-    font-family: Verdana, "DejaVu Sans", sans-serif;
+    font-family: Verdana, "DejaVu Sans", sans-serif; /* put quotes when there is a space between words */
 }
 
 .third-element {
