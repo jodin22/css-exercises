@@ -1,0 +1,19 @@
+.odd-number-element { /* for odd number elements */
+    background-color:rgb(255,182,193); /* light/red pink */
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+.odd-number-element#third-element {
+    font-size: 24px; /* in addition to the styles for all odd numbered elements */
+}
+
+#second-element { /* for second element */
+    color: rgb(0,0,255); /* blue */
+    font-size: 36px; 
+}
+
+#fourth-element { /*  for fourth element */
+    background-color: rgb(144,238,144); /* light green */
+    font-size: 24px;
+    font-weight: bold;
+}
