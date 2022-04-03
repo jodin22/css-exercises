@@ -6,7 +6,7 @@
     font-size: 22px;
 }
 
-.para.small-para {
+.para.small-para {  /* no space here, so this is chaining the two classes to make it more specific */
     font-size: 14px;
 }
 
@@ -17,7 +17,7 @@
 }
 
 #cancel-button,
-.button {
+.button {  /* both buttons share this class */
     background-color: rgb(255,255,255);
     color: rgb(0,0,0);
     font-size: 20px;
@@ -28,7 +28,7 @@
     font-size: 22px;
 }
 
-.text .child {
+.text .child {   /* the space between the two classes is not chaining. this is for ancestor and child */
     color: red;
     font-size: 14px;
 }
