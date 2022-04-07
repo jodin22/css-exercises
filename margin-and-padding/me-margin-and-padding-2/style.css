@@ -1,4 +1,4 @@
-.card {
+.card { /* it almost looks like the desired outcome. the button is not centered. work in progress */
     width: 600px;
     border: 8px solid white;
     margin: auto;
@@ -35,6 +35,7 @@
 
 button {
     /* text-align: center; */
+    /* it almost looks like the desired outcome. the button is not centered. work in progress */
     width: 100px;
     height: 35px;
     display: block;
