@@ -1,43 +1,71 @@
-.card { /* it almost looks like the desired outcome. the button is not centered. work in progress */
-    width: 600px;
-    border: 8px solid white;
+body {  /*this is from the solution. didn't have  body styling when i did the hw. */
+    background: #eee; 
+    font-family: sans-serif;
+}
+
+.card { 
+    width: 600px; /* solution has 400px. leave mine alone; it looks ok. */
+    /* solution: background: #fff; */
+    /* solution: margin: 16px auto; */
+    /* solution: padding: 8px; */
+    border: 8px solid white; /* mine looks close enough. leave alone */
     margin: auto;
 }
 
 .title {
-    font-family: sans-serif;
+    /* solution: background: #e3f4ff;
+    solution: margin-top: 0;
+    solution: margin-bottom: 8px;
+    solution: font-size: 16px;
+    solution: padding: 8px; */ 
+    font-family: sans-serif; /* leave mine alone. looks close enough. */
     font-weight: bold;
     padding: 15px;
     margin: 8px;
-    /* border: 15px solid white; */
+    /* this was trial and error. border: 15px solid white; */
     background: lightblue;
 }
 
 .content {
-    font-family: sans-serif;
+    /* solution: background: #e3f4ff;
+    solution: margin-bottom: 8px;
+    solution: padding: 16px 8px;  */
+    font-family: sans-serif; /* leave mine alone. looks close enough. */
     padding: 15px;
     margin: 8px;
-    /* margin-top: 15px;
+    /* this was trial and error. margin-top: 15px;
     margin-bottom: 15px; */
     background: lightblue;
 }
 
 .button-container {
-    /* padding-top: 15px;
+    /* this was trial and error. padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 250px;
     padding-right: 250px; */
-    padding: 8px;
+
+    /* solution: text-align: center;
+    solution: padding: 8px;
+    solution: background: #e3f4ff;
+    */
+    padding: 8px; /* leave mine alone. looks close enough. */
     text-align: center; 
     margin: 8px;
     background: lightblue;
 }
 
 button {
-    /* text-align: center; */
-    /* it almost looks like the desired outcome. the button is not centered. work in progress */
-    width: 100px;
-    height: 35px;
+    /* this was trial and error. text-align: center; */
+    
+    /* solution: background: white;
+    solution: border: 1px solid #eee;  
+    solution: display: block;
+    solution: margin: 0 auto;
+    solution: padding: 8px 24px; */
+    
+    width: 150px; /* my attempt almost looks like the desired outcome. the button is not centered. work in progress */
+    height: 50px;
+    margin-left: 215px;
     display: block;
 } 
     
