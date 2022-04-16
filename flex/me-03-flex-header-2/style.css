@@ -12,6 +12,15 @@ body {
     background: white;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 0 8px rgba(0,0,0,.1);
+    display: flex; /* outer most flex container */
+    align-items: center; /* centers things vertically inside the header */
+    margin: 8px;
+    column-gap: 16px;
+}
+
+.links {  /* another flex container. the flex items are the list items. */
+    display: flex; 
+    column-gap: 16px; 
 }
 
 .profile-image {
@@ -29,6 +38,9 @@ body {
     font-style: italic;
 }
 
+.notifications { /* this pushes the button and profile image all the way to the right */
+    margin-left: auto;
+}
 button {
     border: none;
     border-radius: 8px;
