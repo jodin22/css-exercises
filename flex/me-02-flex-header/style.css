@@ -4,15 +4,20 @@
     display: flex;
     align-items: center;  /* centers things vertically */
     justify-content: space-between; /* li and logo spaced out far from each other */
+    padding: 8px;  /* from solution */
+    
 }
 
 .left-links ul { /* an inner flex container with it's own flex items, the li */
     display: flex;
-    column-gap: 15px;
+    /*from me  column-gap: 15px; */
+    margin: 0px; /* from solution */
+    padding: 0px; /* from solution */
+    gap: 8px; /* from solution */
    }
 
 .left-links li { /* the flex items of the inner flex container ul */
-    flex: auto; 
+    flex: auto; /* from me */
     /* If you wanted to respect the size property of my navigation items but have the available space shared
      out equally among them, then you might use flex: auto, which is the shorthand for flex: 1 1 auto — all items grow 
      and shrink from a flex-basis of auto. This would mean that the longer item would have more space because it started
@@ -29,11 +34,14 @@
 
 .right-links ul { /* an inner flex container with it's own flex items, the li */
     display: flex;
-    column-gap: 15px;
+    /* from me column-gap: 15px;*/
+    margin: 0px; /* from solution */
+    padding: 0px; /* from solution */
+    gap: 8px;  /* from solution */
 }
 
 .right-links li { /* the flex items of the inner flex container ul */
-    flex: auto;
+    flex: auto; /* from me */
 }
 
 ul { /* removes the bullet points */
