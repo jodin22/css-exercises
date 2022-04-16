@@ -13,14 +13,25 @@ body {
     border-bottom: 1px solid #ddd;
     box-shadow: 0 0 8px rgba(0,0,0,.1);
     display: flex; /* outer most flex container */
-    align-items: center; /* centers things vertically inside the header */
-    margin: 8px;
+    align-items: center;  /* centers things vertically inside the header */
+    margin: 8px; 
     column-gap: 16px;
+
+    /* from solution */  /* to do it this way, you need to edit the html, see comments in index file */
+    /* also would need to delete some of the css since there are new classes of left and right that are flex 
+    containers */
+    /* justify-content: space-between;
+    padding: 8px; */
 }
 
 .links {  /* another flex container. the flex items are the list items. */
     display: flex; 
-    column-gap: 16px; 
+    column-gap: 16px;
+    
+    /* from solution */
+    /* margin: 0px;
+    padding: 0px;
+    gap: 16px; */
 }
 
 .profile-image {
@@ -41,6 +52,15 @@ body {
 .notifications { /* this pushes the button and profile image all the way to the right */
     margin-left: auto;
 }
+
+/* from solution */ /* to do it this way, the html needs to be edited. see the comments in the index file */
+/* .left, .right {  /* also the css will need to be changed since the new classes of left and right are flex 
+    containers */  /*
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  } */
+
 button {
     border: none;
     border-radius: 8px;
