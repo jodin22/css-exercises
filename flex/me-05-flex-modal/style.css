@@ -25,6 +25,8 @@ body {
     /*flex-wrap: wrap; */ /*unncessary here. needed at the modal-2 b/c that flex item needs to be in a column */
     padding: 15px;
     column-gap: 15px;
+
+    /* solution shows display, padding and gap. mine is very close */
 }
 
 .modal-1 { /* is a flex item of modal and is also its own flex container */
@@ -32,6 +34,9 @@ body {
     flex: none; /* this will keep the icon from resizing, it will stay the assigned width/height */
     align-items: flex-start;
     justify-content: center;
+    
+    /* solution shows flex-shrink: 0 on the .icon area instead of flex: none on my .modal-1. 
+    mine still matched the end result */
 }
 
 .icon { /* is a flex item of modal-1 */
@@ -76,6 +81,11 @@ body {
     justify-content: space-between;
     font-size: 20px;
     font-weight: bold;
+
+    /*solution shows display, align-items, justify-content, font-size, font-weight, margin-bottom. mine is missing 
+    margin-bottom. also theirs is on a .header which is a container for the header and close button. mine is inside a
+    column container. they didn't use any column container. seems all their containers are the default row. seems mine 
+    still matches their end result but mine is using too many extra things */ 
 }
 
 .modal-3 { /* to make the bottom buttons to show as a row inside the column format*/
