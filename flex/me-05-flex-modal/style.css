@@ -21,11 +21,15 @@ body {
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,0.2);
     display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .modal-1 {
     display: flex;
-    flex: auto;
+    flex: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon {
@@ -59,10 +63,19 @@ body {
 .modal-2 {
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
+}
+
+.header-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 .modal-3 {
     display: flex;
+    column-gap: 5px;
 }
 
 button {
