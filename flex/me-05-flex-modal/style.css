@@ -15,7 +15,7 @@ body {
     justify-content: center;
 }
 
-.modal {
+.modal { /* is a flex item of body and is also its own flex container */
     background: white;
     width: 480px;
     border-radius: 10px;
@@ -27,14 +27,14 @@ body {
     column-gap: 15px;
 }
 
-.modal-1 {
+.modal-1 { /* is a flex item of modal and is also its own flex container */
     display: flex; /* this container has 1 flex item which is the icon */
     flex: none; /* this will keep the icon from resizing, it will stay the assigned width/height */
     align-items: flex-start;
     justify-content: center;
 }
 
-.icon {
+.icon { /* is a flex item of modal-1 */
     color: royalblue;
     font-size: 26px;
     font-weight: 700;
@@ -70,7 +70,7 @@ body {
     row-gap: 15px;
 }
 
-.header-close-button { /* to make the header and close button to show as a row */
+.header-close-button { /* to make the header and close button to show as a row inside the column format */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +78,7 @@ body {
     font-weight: bold;
 }
 
-.modal-3 { /* to make the bottom buttons to show as a row */
+.modal-3 { /* to make the bottom buttons to show as a row inside the column format*/
     display: flex;
     column-gap: 5px;
 }
