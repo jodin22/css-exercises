@@ -10,7 +10,7 @@ body {
     background: #aaa;
     color: #333;
     /* was given as a freebie */
-    display: flex;
+    display: flex; /* this container has 1 flex item of modal */
     align-items: center;
     justify-content: center;
 }
@@ -20,15 +20,17 @@ body {
     width: 480px;
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,0.2);
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* this container has two flex items of modal-1 and modal-2. modal-1 is the row format 
+                     and modal-2 is the column format. */
+    /*flex-wrap: wrap; */ /*unncessary here. needed at the modal-2 b/c that flex item needs to be in a column */
     padding: 15px;
+    column-gap: 15px;
 }
 
 .modal-1 {
-    display: flex;
-    flex: none;
-    align-items: center;
+    display: flex; /* this container has 1 flex item which is the icon */
+    flex: none; /* this will keep the icon from resizing, it will stay the assigned width/height */
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -61,19 +63,22 @@ body {
 }
 
 .modal-2 {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* this container has 3 flex items of header-close-button, text, and modal-3 */
+    flex-direction: column; /* the 3 flex items will show as columns, but the header text and close button 
+    need to be showing as a row. same with the two bottom buttons. that is why there are two more declarations below */ 
+    flex-wrap: wrap;
     row-gap: 15px;
 }
 
-.header-close-button {
+.header-close-button { /* to make the header and close button to show as a row */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.modal-3 {
+.modal-3 { /* to make the bottom buttons to show as a row */
     display: flex;
     column-gap: 5px;
 }
