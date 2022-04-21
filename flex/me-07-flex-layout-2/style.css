@@ -16,13 +16,48 @@ body {
     color: darkmagenta;
 }
 
+.content {
+    display: flex;
+}
+
 .sidebar {
     width: 300px;
     background: royalblue;
+    flex: none;
+    align-items: flex-start;
+    padding: 16px;
 }
 
+ul {
+    list-style-type: none; /* removes the bullet points */
+}
+
+a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none; /* removes the underline */
+}
+
+.card-group { /* flex container for the cards */
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap; /* this makes it wrap to the next row when it runs out of space.  the .card-group declaration 
+    is what will make it look like a grid of fixed card sizes */
+    justify-content: center;
+    padding: 32px;
+    gap: 30px;
+}
+
+.card-group>* {  /* selecting all direct descendants of the card-group. the 0 0 40% makes it so it won't flex or shrink 
+    and makes it appear as each card is in a fixed grid format. mozilla docs say grid should be used in these situations 
+    instead of flexbox */
+    flex: 0 0 40%;
+    
+}
 .card {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
+    padding: 20px 20px 160px 20px; 
+    
 }
