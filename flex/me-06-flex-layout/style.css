@@ -7,6 +7,44 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/* this is a good template for a landing page */
+/* see 02-flex-header solution for how to style left and right links to be on the top of a page spaced out to the left 
+and right side */
+
+.header {  /* header/footer flex container has the left and right links as flex items */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #eeeeee;
+    padding: 15px;
+}
+
+.left-links,
+.right-links {  /* the left and right links are the flex items of header/footer container. need another flex rule here or 
+    else the links will be vertical and not horizontal */
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    list-style-type: none; /* removes bullet points */
+}
+
+a {
+    text-decoration: none; /* removes the underline */
+}
+
+.content {  /* this puts the image, search bar and buttons in the center of the page */
+    display: flex;
+    flex-direction: column;  /* needs column or else the center of the page will show items in a row */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
 img {
     width: 600px;
 }
@@ -16,6 +54,8 @@ button {
     border: none;
     border-radius: 8px;
     background: #eee;
+    padding: 8px;
+    margin: 8px;
 }
 
 input {
@@ -23,5 +63,5 @@ input {
     border-radius: 16px;
     padding: 8px 24px;
     width: 400px;
-    margin-bottom: 16px;
+    margin: 25px;
 }
