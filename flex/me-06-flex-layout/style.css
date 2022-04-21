@@ -5,6 +5,9 @@ body {
     margin: 0px;
     /* overflow: hidden; leave out for now b/c it takes away scroll bar and can't see all the content */
     font-family: Roboto, sans-serif;
+
+    /* solution has display: flex and flex-direction: column here. leave mine alone b/c it looks very close to the 
+    solution. */
 }
 
 /* this is a good template for a landing page */
@@ -15,6 +18,8 @@ and right side */
     display: flex;
     justify-content: space-between;
     padding: 15px;
+
+/* mine matches the solution except they use 16px */
 }
 
 .footer {
@@ -22,6 +27,8 @@ and right side */
     justify-content: space-between;
     background: #eeeeee;
     padding: 15px;
+
+    /* mine matches the solution except they use 16px */
 }
 
 .left-links,
@@ -31,10 +38,14 @@ and right side */
     justify-content: space-between;
     column-gap: 20px;
     list-style-type: none; /* removes bullet points */
+
+    /* the solution uses ul instead of the class name. mine matches the display, gap and list style. mine has justify-content 
+    but the solutions does not. */
 }
 
 a {
     text-decoration: none; /* removes the underline */
+    /* mine is missing color: #666 */
 }
 
 .content {  /* this puts the image, search bar and buttons in the center of the page */
@@ -43,6 +54,9 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 75px;
+
+    /* mine matches the solution except mine is missing flex: 1. also mine has margin-bottom but the solution does not.
+    leave mine alone b/c it looks very close to the solution */
 }
 
 img {
@@ -56,6 +70,8 @@ button {
     background: #eee;
     padding: 8px;
     margin: 8px;
+
+    /* solution has padding as 8 and 16px */
 }
 
 input {
