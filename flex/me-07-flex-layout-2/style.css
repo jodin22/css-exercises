@@ -1,21 +1,27 @@
+/* a good template for a grid using flexbox */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     min-height: 100vh;
+
+    /* solution has display: flex and flex-direction: column. I didn't do columns yet mine still showed as a grid */
+    /* solution also has a body class which on mine is content class. Their body class is not at the body tag. Instead 
+    it is between the header class and sidebar class. */
 }
 
 .header {
     height: 72px;
     background: darkmagenta;
     color: white;
-    font-size: 32px;
-    font-weight: 900;
-    padding-left: 16px;
-    display: flex;
-    align-items: center;
+    font-size: 32px; /* matches solution */
+    font-weight: 900; /* matches solution */
+    padding-left: 16px; /* solution has padding: 0 16 */
+    display: flex;  /* matches solution */
+    align-items: center; /* matches solution */
 }
 
-.footer {
+.footer { /* matches the solution */
     height: 72px;
     background: #eee;
     color: darkmagenta;
@@ -24,35 +30,44 @@ body {
     justify-content: center;
 }
 
-.content {
-    display: flex;
+.content { 
+    display: flex; /* solution uses .body where my .content is */
+    /* the display matches but theirs also has flex: 1 */
 }
 
 .sidebar {
     width: 300px;
     background: royalblue;
-    flex: none; /* this keeps the width fixed */
+    flex: none; /* this keeps the width fixed */ /* solution uses flex-shrink: 0 */
     align-items: flex-start;
     padding: 16px;
 }
 
 ul {
     list-style-type: none; /* removes the bullet points */
+    margin: 0px; /* was missing in mine. added from the solution */
+    padding: 0px; /* was missing in mine. added from the solution */
 }
 
-a {
+li {
+    margin-bottom: 16px; /* was missing in mine. added from the solution */
+}
+
+a {  /* matches the solution */
     font-size: 24px;
     color: white;
     text-decoration: none; /* removes the underline */
 }
 
-.card-group { /* flex container for the cards */
+.card-group { /* flex container for the cards */  /* solution uses .container */
     width: 1200px;
-    display: flex;
+    display: flex; /* matches solution */
     flex-wrap: wrap; /* this makes it wrap to the next row when it runs out of space.  the .card-group declaration 
-    is what will make it look like a grid of fixed card sizes */
+    is what will make it look like a grid of fixed card sizes */ /* matches solution */ 
+    /* theirs uses flex-direction: column for the entire body tag which includes header/footer, sidebar, the cards etc. 
+    then each div for those sections are then flexed sideways with some having flex-wrap so it looks like a grid. */
     justify-content: center;
-    padding: 32px;
+    padding: 32px; /* matches solution */
     gap: 30px;
 }
 
@@ -68,4 +83,6 @@ a {
     border-radius: 4px;
     padding: 20px 20px 160px 20px; 
     
+    /* the solution adds margin, padding and width. mine uses flex 0 0 40% and different padding to make it appear as 
+    a grid of cards */
 }
